@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Inovasi Lokal</title>
+  </head>
+  <body>
+    <nav class="sticky top-0 z-50 bg-[#1a1a1a] border-b border-[#2c2c2c]">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+        <div class="text-2xl text-white hover:text-purple-500 font-['Caprasimo'] cursor-pointer">
+          InovasiLokal
+        </div>
+        <div class="hidden md:flex gap-6 items-center text-white text-sm font-['Poppins']">
+          <a href="#home" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Home</a>
+          <a href="#service" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Service</a>
+          <a href="#keunggulan" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Keunggulan</a>
+          <a href="#portofolio" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Portofolio</a>
+          <a href="#konsultasi" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Konsultasi Sekarang</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="h-screen flex flex-col justify-center items-center bg-[#1a1a1a]">
+      <div class="relative w-[526px] h-[283px] overflow-hidden rounded-[10px] mx-auto" id="carousel">
+        <div class="flex transition-transform duration-700 ease-in-out" id="slides">
+          <img src="./poto1.png" alt="slide1" class="w-[526px] h-[283px] object-cover flex-shrink-0" />
+          <img src="./poto2.png" alt="slide2" class="w-[526px] h-[283px] object-cover flex-shrink-0" />
+          <img src="./poto3.png" alt="slide3" class="w-[526px] h-[283px] object-cover flex-shrink-0" />
+          <img src="./poto1.png" alt="1-clone" class="w-[526px] h-[283px] object-cover flex-shrink-0" />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <h1 class="text-white text-[36.8px] mt-5 leading-none font-semibold text-center" style="font-family: 'Poppins', sans-serif;">
+          Siap Bikin Brandmu Jadi Sorotan Dengan <span class="whitespace-nowrap">Konten Keren dan Strategi</span>
+        </h1>
+      </div>
+      <p class="text-white text-[14.4px] font-sm mt-3 text-center max-w-3xl" style="font-family: 'Poppins', sans-serif;">Dengan strategi yang tepat dan kreativitas tanpa batas, kami siap memperkuat identitas 
+      dan kehadiran bisnismu melalui sosial media yang menarik</p>
+      <div class="mt-4 flex flex-row justify-center gap-5 mb-4">
+        <div class="px-4 py-2 bg-[#ffe25a] text-[15px] rounded-[4px]" style="font-family: 'Montserrat', sans-serif;">COBA SEKARANG</div>
+        <div class="px-8 py-2 bg-[#ffffff] text-[15px] rounded-[30px] flex flex-row gap-1" style="font-family: 'Poppins', sans-serif;">Ketahui Lebih Lanjut 
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+          </svg> 
+        </div>
+      </div>
+    </section>
+
+    <section id="value" class="bg-[#ffffff] h-screen">
+      <div class="flex flex-col mt-[150px]">
+        <div class="flex justify-center tracking-wider items-center px-6 w-1/4 ml-10 py-2 rounded-[20px] font-semibold text-white bg-[#2274a5]" style="font-family: 'Poppins', sans-serif;">BERSAMA INOVASILOKAL</div>
+        <h2 class="ml-10 font-semibold mt-5 color-[#1A1A1A] leading-none text-[65px] w-2/3" style="font-family: 'Montserrat', sans-serif;">Brand Lebih Berkesan Dengan Konten Sosial Media Yang Hebat</h2>
+      </div>
+      <div class="flex flex-row gap-10 ml-10 mt-14 w-[62px]">
+        <div class="flex flex-col">
+          <hr style="width: 340px; margin: 0;" />
+          <p class="mt-8 leading-none font-semibold text-[30px]" style="font-family:'Roboto', sans-serif;">Ciptakan Desain Visual yang Kuat</p>
+          <p class="mt-4 text-[15px] leading-none" style="font-family: 'Montserrat', sans-serif;">Kami membantu kamu menciptakan desain yang menarik profesional untuk  memperkuat brand bisnismu.</p>
+        </div>
+        <div class="flex flex-col">
+          <hr style="width: 340px; margin: 0;" />
+          <p class="mt-8 leading-none font-semibold text-[30px]" style="font-family:'Roboto', sans-serif;">Penjualan yang Lebih Tinggi</p>
+          <p class="mt-4 text-[15px] leading-none" style="font-family: 'Montserrat', sans-serif;">Sosial Media dan iklan yang dikelola dengan baik akan meningkatkan konversi penjualan.</p>
+        </div>
+        <div class="flex flex-col">
+          <hr style="width: 340px; margin: 0;" />
+          <p class="mt-8 leading-none font-semibold text-[30px]" style="font-family:'Roboto', sans-serif;">Peningkatan Brand Awareness</p>
+          <p class="mt-4 text-[15px] leading-none" style="font-family: 'Montserrat', sans-serif;">Konten berkualitas dan kolaborasi dengan influencer akan membuat brand lebih dikenal luas.</p>
+        </div>
+      </div>
+      <div class="mt-6">
+        <button class="ml-10 text-[15px] bg-black text-white px-5 py-4 rounded-[50px]" style="font-family: 'Montserrat', sans-serif;">KONSULTASI SEKARANG</button>
+      </div>
+    </section>
+
+    <section class="bg-white py-12">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-8">
+        <div class="flex-1 flex flex-col gap-6 md:ml-10">
+          <p class="text-[42px] md:text-[50px] text-[#1A1A1A] font-bold leading-tight font-['Montserrat']">
+            Buat Customermu Tertarik Dengan Produkmu Melalui Sosial Media yang Memukau!
+          </p>
+          <button class="w-fit px-6 py-3 bg-[#1A1A1A] text-white rounded-full hover:bg-[#333] transition">
+            ORDER SEKARANG
+          </button>
+        </div>
+        <div class="flex-1">
+          <img src="./alfan.png" alt="alfan" class="w-full max-w-md mx-auto">
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen bg-[#3d5b81] mt-16 flex flex-col items-center justify-center px-6 py-12">
+      <h2 class="text-[30px] font-['Montserrat'] text-white font-semibold text-center mb-2">
+        Layanan yang Bisa Kamu Dapatkan
+      </h2>
+      <p class="text-white text-[15px] font-['Montserrat'] text-center mb-8 max-w-xl">
+        Untuk membantu mengembangkan brand kamu, kami memiliki beberapa layanan
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+        <div class="w-full h-[440px] bg-white rounded-lg shadow-md hover:shadow-indigo-200 transition-all duration-500 ease-in-out">
+          <img src="./poto1.png" alt="img" class="w-full h-1/2 object-cover rounded-t-lg" />
+          <div class="p-4 flex flex-col justify-between h-1/2">
+            <div>
+              <p class="text-[22px] font-bold font-['Roboto'] leading-snug mb-2">
+                Social Media Management
+              </p>
+              <p class="text-[14px] text-gray-500 font-['Montserrat']">
+                Mengelola konten bulanan yang menarik yang disesuaikan dengan tren dan target bisnismu.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer hover:text-purple-500 transition mt-4">
+              <p class="text-[14px] font-semibold font-['Roboto'] underline">
+                Pesan Sekarang
+              </p>
+              <span class="font-bold text-[16px]">>></span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[440px] bg-white rounded-lg shadow-md hover:shadow-indigo-200 transition-all duration-500 ease-in-out">
+          <img src="./poto2.png" alt="img" class="w-full h-1/2 object-cover rounded-t-lg" />
+          <div class="p-4 flex flex-col justify-between h-1/2">
+            <div>
+              <p class="text-[22px] font-bold font-['Roboto'] leading-snug mb-2">Paid Ads Management</p>
+              <p class="text-[14px] text-gray-500 font-['Montserrat']">pengelolaan iklan berbayar di berbagai platform (seperti Facebook Ads, Instagram Ads, Tiktok Ads).</p>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer hover:text-purple-500 transition mt-4">
+              <p class="text-[14px] font-semibold font-['Roboto'] underline">Pesan Sekarang</p>
+              <span class="font-bold text-[16px]">>></span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[440px] bg-white rounded-lg shadow-md hover:shadow-indigo-200 transition-all duration-500 ease-in-out">
+          <img src="./poto3.png" alt="img" class="w-full h-1/2 object-cover rounded-t-lg" />
+          <div class="p-4 flex flex-col justify-between h-1/2">
+            <div>
+              <p class="text-[22px] font-bold font-['Roboto'] leading-snug mb-2">Influencer Marketing</p>
+              <p class="text-[14px] text-gray-500 font-['Montserrat']">Membantu brandmu terhubung dengan influencer relevan.</p>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer hover:text-purple-500 transition mt-4">
+              <p class="text-[14px] font-semibold font-['Roboto'] underline">Pesan Sekarang</p>
+              <span class="font-bold text-[16px]">>></span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[440px] bg-white rounded-lg shadow-md hover:shadow-indigo-200 transition-all duration-500 ease-in-out">
+          <img src="./poto4.png" alt="img" class="w-full h-1/2 object-cover rounded-t-lg" />
+          <div class="p-4 flex flex-col justify-between h-1/2">
+            <div>
+              <p class="text-[22px] font-bold font-['Roboto'] leading-snug mb-2">Landing Page Design</p>
+              <p class="text-[14px] text-gray-500 font-['Montserrat']">Jangkau customermu lebih jauh dengn website professional</p>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer hover:text-purple-500 transition mt-4">
+              <p class="text-[14px] font-semibold font-['Roboto'] underline">Pesan Sekarang</p>
+              <span class="font-bold text-[16px]">>></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen">
+      <div class="flex flex-row h-full gap-3">
+        <div class="w-1/2 p-6 flex items-center justify-center overflow-hidden">
+          <img id="slideshow" src="./alfan.png" alt="foto"
+              class="rounded-lg opacity-100 transition-opacity duration-1000 ease-in-out">
+        </div>
+        <div class="w-1/2 p-[50px] flex flex-col gap-5 justify-center">
+          <p class="font-semibold text-[55.5px] font-['Montserrat'] leading-tight">
+            Strategi Sosial Media yang Berkualitas Untuk Hasil Yang Maksimal
+          </p>
+          <p class="text-[20px] font-['Montserrat'] leading-tight">
+            Bersama InovasiLokal, kamu akan melihat keajaiban pada brandmu
+          </p>
+          <ul class="list-disc pl-6 text-[15px] font-['Montserrat'] space-y-2">
+            <li>Desain Visual yang Memukau</li>
+            <li>Strategi Branding yang Terencana</li>
+            <li>Pesan yang Jelas dan Tepat</li>
+            <li>Konsistensi dalam Identitas Brand</li>
+          </ul>
+          <button class="px-4 py-4 bg-[#1A1A1A] rounded-[50px] text-[15px] font-['Montserrat'] text-white self-start hover:bg-black cursor-pointer">
+            ORDER SEKARANG
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="block w-full -mb-1">
+        <svg class="block w-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#cacaca" fill-opacity="0.3" d="M0,140L120,160C240,180,480,220,720,210C960,200,1200,140,1320,110L1440,80L1440,320L0,320Z"></path>
+            <path fill="#656565" fill-opacity="0.6" d="M0,180L80,200C160,220,320,260,480,250C640,240,800,180,960,170C1120,160,1280,200,1360,220L1440,240L1440,320L0,320Z"></path>
+            <path fill="#000000" fill-opacity="1" d="M0,220L72,210C144,200,288,180,432,190C576,200,720,240,864,250C1008,260,1152,240,1224,230L1296,220L1440,210L1440,320L0,320Z"></path>
+        </svg>
+    </div>
+
+    <section id="home" class="h-screen flex flex-col justify-center items-center bg-black">
+      <div class="flex justify-center">
+        <h1 class="text-white text-[36.8px] mt-5 leading-none font-semibold text-center" style="font-family: 'Poppins', sans-serif;">
+          Siap Bikin Brandmu Jadi Sorotan Dengan <span class="whitespace-nowrap">Konten Keren dan Strategi</span>
+        </h1>
+      </div>
+      <p class="text-white text-[14.4px] font-sm mt-3 text-center max-w-3xl" style="font-family: 'Poppins', sans-serif;">Dengan strategi yang tepat dan kreativitas tanpa batas, kami siap memperkuat identitas 
+      dan kehadiran bisnismu melalui sosial media yang menarik</p>
+      <div class="mt-4 flex flex-row justify-center gap-5 mb-4">
+        <div class="px-4 py-2 bg-[#ffe25a] text-[15px] rounded-[4px]" style="font-family: 'Montserrat', sans-serif;">COBA SEKARANG</div>
+        <div class="px-8 py-2 bg-[#ffffff] text-[15px] rounded-[30px] flex flex-row gap-1" style="font-family: 'Poppins', sans-serif;">Ketahui Lebih Lanjut 
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+          </svg> 
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#1A1A1A] text-white px-8 py-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h2 class="text-2xl font-semibold font-['Roboto']">Inovasi Lokal</h2>
+          <p class="mt-4 text-sm font-light font-['Lato']">
+            Bangun brandmu dan jangkau lebih jauh customer mu bersama Inovasi Lokal.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold font-['Lato'] mb-4">Layanan</h3>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="hover:underline">Desain Logo</a></li>
+            <li><a href="#" class="hover:underline">Branding</a></li>
+            <li><a href="#" class="hover:underline">Pembuatan Website</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold font-['Lato'] mb-4">Follow Kami</h3>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="hover:underline">Instagram</a></li>
+            <li><a href="#" class="hover:underline">LinkedIn</a></li>
+            <li><a href="#" class="hover:underline">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const slides = document.getElementById('slides');
+      const slideCount = slides.children.length;
+      const slideWidth = 526;
+      let index = 0;
+
+      function autoSlide() {
+        index++;
+        slides.style.transition = 'transform 0.7s ease-in-out';
+        slides.style.transform = `translateX(-${index * slideWidth}px)`;
+        if (index === slideCount - 1) {
+          setTimeout(() => {
+            slides.style.transition = 'none'; 
+            slides.style.transform = `translateX(0px)`;
+            index = 0;
+          }, 700);
+        }
+      }
+      setInterval(autoSlide, 4000);
+
+      const images = ["./alfan.png", "./poto2.png", "./poto3.png"]; 
+      let indexis = 0;
+      const imgElement = document.getElementById("slideshow");
+
+      setInterval(() => {
+        imgElement.classList.add("opacity-0");
+        setTimeout(() => {
+          indexis = (indexis + 1) % images.length;
+          imgElement.src = images[indexis];
+          imgElement.classList.remove("opacity-0");
+        }, 1000); 
+      }, 4000); 
+  </script>
+  </body>
+</html>
