@@ -10,20 +10,41 @@
     <title>Inovasi Lokal</title>
   </head>
   <body>
-    <nav class="sticky top-0 z-50 bg-[#1a1a1a] border-b border-[#2c2c2c]">
-      <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
-        <div class="text-2xl text-white hover:text-purple-500 font-['Caprasimo'] cursor-pointer">
-          InovasiLokal
-        </div>
-        <div class="hidden md:flex gap-6 items-center text-white text-sm font-['Poppins']">
-          <a href="#home" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Home</a>
-          <a href="#service" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Service</a>
-          <a href="#keunggulan" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Keunggulan</a>
-          <a href="#portofolio" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Portofolio</a>
-          <a href="#konsultasi" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Konsultasi Sekarang</a>
-        </div>
-      </div>
-    </nav>
+<nav class="sticky top-0 z-50 bg-[#1a1a1a] border-b border-[#2c2c2c]">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+    <!-- Logo -->
+    <div class="text-2xl text-white hover:text-purple-500 font-['Caprasimo'] cursor-pointer">
+      InovasiLokal
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex gap-6 items-center text-white text-sm font-['Poppins']">
+      <a href="#home" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Home</a>
+      <a href="#service" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Service</a>
+      <a href="#keunggulan" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Keunggulan</a>
+      <a href="#portofolio" class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">Portofolio</a>
+      <a href="#konsultasi" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Konsultasi Sekarang</a>
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <!-- Icon -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col gap-4 px-4 pb-4 text-white text-sm font-['Poppins'] md:hidden bg-[#1a1a1a]">
+    <a href="#home" class="hover:text-purple-500">Home</a>
+    <a href="#service" class="hover:text-purple-500">Service</a>
+    <a href="#keunggulan" class="hover:text-purple-500">Keunggulan</a>
+    <a href="#portofolio" class="hover:text-purple-500">Portofolio</a>
+    <a href="#konsultasi" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition w-fit">Konsultasi Sekarang</a>
+  </div>
+</nav>
 
 <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-[#1a1a1a] px-4">
   <div class="relative w-full max-w-[526px] overflow-hidden rounded-[10px] mx-auto" id="carousel">
@@ -440,6 +461,12 @@
         renderReview(currentIndex);
       });
       renderReview(currentIndex);
+
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
   </script>
   </body>
 </html>
