@@ -15,15 +15,20 @@
   </head>
   <body>
 
-<nav class="sticky top-0 z-50 bg-[#f9f9f9] ">
+<nav class="sticky top-0 z-50 bg-[#f9f9f9]">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+    <!-- Logo -->
     <div class="flex items-center gap-2 flex-shrink-0">
       <img src="./logo.png" alt="logo" class="h-8">
-      <div class="text-2xl font-bold text-[#393C43] hover:text-purple-500 font-['Montserrat'] cursor-pointer">
+      <div
+        class="text-2xl font-bold text-[#393C43] hover:text-purple-500 font-['Montserrat'] cursor-pointer">
         InovasiLokal
       </div>
     </div>
-    <div class="hidden md:flex gap-6 items-center text-[#393C43] text-sm font-['Poppins']">
+
+    <!-- Menu Desktop -->
+    <div
+      class="hidden md:flex gap-6 items-center text-[#393C43] text-sm font-['Poppins']">
       <a href="#home"
         class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300 hover:text-purple-500">
         Home
@@ -37,26 +42,41 @@
         Keunggulan
       </a>
     </div>
+
+    <!-- CTA Desktop -->
     <div class="hidden md:flex">
       <a href="#konsultasi"
-        class="px-4 py-2 bg-[#5C59C2] text-white rounded-lg hover:bg-red-600 transition">
+        class="px-4 py-2 bg-[#5C59C2] text-white rounded-lg hover:bg-[#4A47A8] transition">
         Konsultasi Sekarang
       </a>
     </div>
 
+    <!-- Hamburger -->
     <div class="md:hidden flex-shrink-0">
       <button id="hamburger-menu" class="text-black focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
     </div>
+  </div>
 
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#f9f9f9] px-4 py-4 border-t border-gray-200">
+    <a href="#home"
+      class="block py-2 text-[#393C43] hover:text-purple-500">Home</a>
+    <a href="#service"
+      class="block py-2 text-[#393C43] hover:text-purple-500">Service</a>
+    <a href="#keunggulan"
+      class="block py-2 text-[#393C43] hover:text-purple-500">Keunggulan</a>
+    <a href="#konsultasi"
+      class="block py-2 mt-2 bg-[#5C59C2] text-white text-center rounded-lg hover:bg-[#4A47A8] transition">
+      Konsultasi Sekarang
+    </a>
   </div>
 </nav>
-    
     <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-[#f9f9f9] px-4">
       <div class="flex justify-center px-4">
         <h1 class="text-black text-2xl md:text-4xl lg:text-[36.8px] mt-5 leading-tight font-bold text-center font-['Montserrat']">
@@ -138,12 +158,12 @@
     <section class="bg-[#F9F9F9] min-h-screen flex items-center justify-center">
       <div class="relative mt-[90px]">
         <img src="Group 362.png" alt="" class="w-3/4">
-        <div class="absolute inset-y-0 right-5 flex flex-col gap-2 items-end text-white text-lg font-bold space-y-3">
+        <div class="lg:absolute lg:inset-y-0 lg:right-5 flex flex-col gap-2 items-end text-white text-lg font-bold space-y-3">
           <div class="px-3 py-2 bg-[#5C59C2] rounded-lg">
             Solusi Inovasi Lokal
           </div>
           <div class="max-w-[35rem] text-right">
-            <p class="text-[#5C59C2] font-['Montserrat'] text-[50px] font-semibold leading-none">
+            <p class="text-[#5C59C2] font-['Montserrat'] lg:text-[50px] font-semibold leading-none text-2xl md:text-4xl">
               Kami Menciptakan <span class="text-[#2a2a2a]">Alat Otomasi</span> <br> yang Cerdas, Simple dan Sesuai Kebutuhan Kamu
             </p>
           </div>
