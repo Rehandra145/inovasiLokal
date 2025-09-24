@@ -78,7 +78,7 @@
   </div>
 </nav>
 
-<section id="home" class="flex flex-col justify-center items-center bg-[#f9f9f9] h-auto">
+<section id="home" class="flex flex-col justify-center items-center bg-[#f9f9f9] h-auto min-h-screen sm:min-h-0">
   <div class="flex justify-center px-4">
     <h1 class="text-black text-2xl md:text-4xl lg:text-[36.8px] leading-tight font-bold text-center font-['Montserrat']">
       Automation
@@ -87,9 +87,11 @@
       </span>
     </h1>
   </div>
+
   <p class="text-black text-[16px] mt-3 text-center max-w-3xl font-light font-['Montserrat'] px-4">
     Dengan strategi yang tepat dan kreativitas tanpa batas, kami siap memperkuat identitas dan kehadiran bisnismu melalui sosial media yang menarik
   </p>
+
   <div class="mt-4 flex flex-wrap justify-center gap-3 mb-4">
     <div class="px-4 py-2 bg-[#EAEAEA] text-[#393C43] font-medium text-sm md:text-[15px] rounded-[4px] font-['Montserrat'] cursor-pointer">
       Konsultasi Sekarang
@@ -105,63 +107,59 @@
     </div>
   </div>
 
-  <div class="relative w-full p-0 m-0 max-w-[526px] overflow-hidden rounded-[10px] mx-auto">
+  <div class="relative w-full p-0 m-0 max-w-[426px] overflow-hidden rounded-[10px] mx-auto">
     <div class="flex transition-transform duration-700 ease-in-out" id="slides">
       <img src="./hero.webp" alt="slide1" class="w-full h-auto object-cover flex-shrink-0" />
     </div>
   </div>
 </section>
 
-<section id="value" class="bg-white min-h-screen px-5">
-  <div class="flex flex-col mt-10 mx-10">
+<section id="value" class="bg-white h-auto py-10 px-5 flex flex-col justify-center">
+  <div class="mx-10">
     <div class="flex justify-center tracking-wider items-center px-3 w-fit py-2 rounded-[5px] font-medium text-white bg-[#5C59C2] text-sm sm:text-base font-['Montserrat']">
       Problematika Teknologi           
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
         </svg>
     </div>
-    <h2 class="mt-5 font-semibold text-[#1A1A1A] leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-[46.77px] max-w-4xl font-['Montserrat']">
+    <h2 class="mt-4 font-semibold text-[#1A1A1A] leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-[46.77px] max-w-4xl font-['Montserrat']">
       Di Era Teknologi Seperti Sekarang Ini Banyak Permasalah Yang Sering Kita Hadapi
     </h2>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14 mx-10">
-        <div class="flex flex-col">
-          <hr class="w-full border-black" />
-          <p class="mt-8 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">
-            Pekerjaan Masih Manual
-          </p>
-          <p class="mt-4 text-[16px] sm:text-base leading-snug font-['Montserrat']">
-            Banyak aktivitas masih dilakukan dengan cara lama sehingga memakan waktu lebih lama dari seharusnya.
-          </p>
-        </div>
-        <div class="flex flex-col">
-          <hr class="w-full border-black" />
-          <p class="mt-8 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">Tenaga Terkuras Untuk Hal Kecil</p>
-          <p class="mt-4 text-[16px] sm:text-base leading-snug font-['Montserrat']">
-            Rutinitas berulang sering bikin kita lelah, padahal ada cara yang lebih praktis untuk menyelesaikannya.
-          </p>
-        </div>
-        <div class="flex flex-col">
-          <hr class="w-full border-black" />
-          <p class="mt-8 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">Produktivitas Tidak Maksimal</p>
-          <p class="mt-4 text-[16px] sm:text-base leading-snug font-['Montserrat']">
-            Karena sibuk di urusan teknis, kita jadi sulit fokus pada hal yang lebih penting dan berdampak besar.
-          </p>
-        </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-6 mx-10">
+    <div class="flex flex-col">
+      <hr class="w-full border-black" />
+      <p class="mt-6 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">
+        Pekerjaan Masih Manual
+      </p>
+      <p class="mt-3 text-[16px] sm:text-base leading-snug font-['Montserrat']">
+        Banyak aktivitas masih dilakukan dengan cara lama sehingga memakan waktu lebih lama dari seharusnya.
+      </p>
+    </div>
+    <div class="flex flex-col">
+      <hr class="w-full border-black" />
+      <p class="mt-6 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">Tenaga Terkuras Untuk Hal Kecil</p>
+      <p class="mt-3 text-[16px] sm:text-base leading-snug font-['Montserrat']">
+        Rutinitas berulang sering bikin kita lelah, padahal ada cara yang lebih praktis untuk menyelesaikannya.
+      </p>
+    </div>
+    <div class="flex flex-col">
+      <hr class="w-full border-black" />
+      <p class="mt-6 leading-none font-semibold text-xl sm:text-2xl font-['Roboto']">Produktivitas Tidak Maksimal</p>
+      <p class="mt-3 text-[16px] sm:text-base leading-snug font-['Montserrat']">
+        Karena sibuk di urusan teknis, kita jadi sulit fokus pada hal yang lebih penting dan berdampak besar.
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="bg-[#F9F9F9] h-auto pt-12 flex items-center ">
-  <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
-    
-    <!-- Kolom Kiri: Gambar -->
-    <div class="flex justify-center lg:justify-start">
-      <img src="Group 362.png" alt="Ilustrasi Inovasi" class="w-full max-w-md lg:max-w-lg">
-    </div>
 
-    <!-- Kolom Kanan: Teks -->
-    <div class="flex flex-col gap-4 text-center lg:text-right lg:items-end">
+<section class="bg-[#F9F9F9] h-auto pt-12 flex items-center h-auto">
+  <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
 
+    <!-- Kolom Teks (mobile: di atas) -->
+    <div class="order-1 lg:order-2 flex flex-col gap-4 text-center lg:text-right lg:items-end">
       <!-- Judul -->
       <h1 class="text-[#5C59C2] font-['Montserrat'] font-bold leading-tight
                  text-2xl sm:text-3xl md:text-4xl lg:text-[45px] max-w-xl">
@@ -184,11 +182,17 @@
         </svg>
       </button>
     </div>
+
+    <!-- Kolom Gambar (mobile: di bawah) -->
+    <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
+      <img src="Group 362.png" alt="Ilustrasi Inovasi" class="w-full max-w-md lg:max-w-lg">
+    </div>
+
   </div>
 </section>
 
-<section class="bg-white py-16 px-5 min-h-screen overflow-x-hidden">
-  <div class="flex flex-col mb-8 text-center md:text-left mx-10">
+<section class="bg-white py-16 lg:px-5 min-h-screen overflow-x-hidden">
+  <div class="flex flex-col mb-8 text-center md:text-left mx-7 lg:mx-10">
     <p class="text-[#5C59C2] font-['Montserrat'] font-semibold text-3xl md:text-[55px]">
       Solusi Yang Kami <span class="text-[#2A2A2A]">Berikan</span>
     </p>
@@ -197,7 +201,7 @@
     </p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-2 mx-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-2 mx-8">
     <!-- Foto kiri lebih panjang (2 kolom di lg) -->
     <div class="relative lg:col-span-2 rounded-xl overflow-hidden h-[250px] md:h-[300px]">
       <img src="./young-woman-controlling-plantation 1.png"
@@ -249,49 +253,48 @@
   </div>
 </section>
 
-<section class="min-h-screen bg-[#F9F9F9] flex items-center px-6 py-12">
-  <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+<section class="h-auto lg:min-h-screen bg-[#F9F9F9] flex items-center py-20">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-16 px-6 lg:px-12">
     
-    <!-- Kiri -->
-    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
-      <h1 class="font-['Montserrat'] text-4xl sm:text-5xl md:text-6xl font-bold text-[#5C59C2] leading-none text-center md:text-right">
-        KENAPA <br>
-        <span class="text-[#2A2A2A]">SEMUA</span> <br>
-        HARUS SERBA <br>
-        OTOMASI
-      </h1>
-    </div>
+<div class="w-full md:w-1/2 flex justify-center md:justify-end px-2 md:px-4">
+<h1 class="font-['Montserrat'] text-4xl sm:text-5xl md:text-6xl font-bold text-[#5C59C2] leading-snug text-center md:text-right">
+  KENAPA <br class="hidden sm:block">
+  <span class="text-[#2A2A2A]">SEMUA</span> <br class="hidden sm:block">
+  HARUS SERBA <br class="hidden sm:block">
+  OTOMASI
+</h1>
+</div>
 
     <!-- Kanan -->
-    <div class="w-full md:w-1/2 flex flex-col gap-4">
+    <div class="w-full md:w-1/2 flex flex-col gap-8">
       <!-- Card 1 -->
-      <div class="flex items-start gap-3 bg-white shadow-md rounded-xl p-4">
-        <div class="text-[#5C59C2] text-2xl sm:text-3xl">✔️</div>
+      <div class="flex items-start gap-4 bg-white shadow-md rounded-2xl p-6">
+        <div class="text-[#5C59C2] text-3xl">✔️</div>
         <div>
-          <h3 class="font-bold text-[#5C59C2] text-base sm:text-lg">Lebih Hemat Waktu</h3>
-          <p class="text-gray-600 text-sm sm:text-base">
+          <h3 class="font-bold text-[#5C59C2] text-lg sm:text-xl">Lebih Hemat Waktu</h3>
+          <p class="text-gray-600 text-base sm:text-lg">
             Otomasi bikin pekerjaan yang biasanya lama jadi lebih cepat selesai.
           </p>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="flex items-start gap-3 bg-white shadow-md rounded-xl p-4">
-        <div class="text-[#5C59C2] text-2xl sm:text-3xl">⏰</div>
+      <div class="flex items-start gap-4 bg-white shadow-md rounded-2xl p-6">
+        <div class="text-[#5C59C2] text-3xl">⏰</div>
         <div>
-          <h3 class="font-bold text-[#5C59C2] text-base sm:text-lg">Lebih Efisien & Konsisten</h3>
-          <p class="text-gray-600 text-sm sm:text-base">
+          <h3 class="font-bold text-[#5C59C2] text-lg sm:text-xl">Lebih Efisien & Konsisten</h3>
+          <p class="text-gray-600 text-base sm:text-lg">
             Hasil lebih rapi dan stabil tanpa harus ribet dikerjakan manual.
           </p>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="flex items-start gap-3 bg-white shadow-md rounded-xl p-4">
-        <div class="text-[#5C59C2] text-2xl sm:text-3xl">🎯</div>
+      <div class="flex items-start gap-4 bg-white shadow-md rounded-2xl p-6">
+        <div class="text-[#5C59C2] text-3xl">🎯</div>
         <div>
-          <h3 class="font-bold text-[#5C59C2] text-base sm:text-lg">Bisa Fokus ke Hal Penting</h3>
-          <p class="text-gray-600 text-sm sm:text-base">
+          <h3 class="font-bold text-[#5C59C2] text-lg sm:text-xl">Bisa Fokus ke Hal Penting</h3>
+          <p class="text-gray-600 text-base sm:text-lg">
             Dengan tugas yang otomatis, kamu bisa punya energi untuk hal yang benar-benar berarti.
           </p>
         </div>
@@ -299,6 +302,7 @@
     </div>
   </div>
 </section>
+
 
 <section id="konsultasi" class="flex flex-col justify-center items-center bg-[#5C59C2] text-center px-4 font-['Poppins'] h-[450px] sm:min-h-screen">
   <p class="text-white text-2xl sm:text-[30px] font-semibold">SPESIAL BUAT KAMU</p>
