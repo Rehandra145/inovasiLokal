@@ -12,6 +12,43 @@
       rel="stylesheet"
     />
     <title>Inovasi Lokal | Komunitas Teknologi Informasi Indonesia</title>
+    <style>
+      .reveal {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+
+      .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Untuk elemen teks */
+      .home-text {
+        opacity: 0;
+        transform: translateY(-40px);
+        transition: all 0.8s ease-out;
+      }
+
+      .home-text.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Untuk gambar */
+      .home-img {
+        opacity: 0;
+        transform: scale(0.98);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+
+      .home-img.show {
+        opacity: 1;
+        transform: scale(1);
+      }
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
 
@@ -79,7 +116,8 @@
 </nav>
 
 <section id="home" class="flex flex-col justify-center items-center bg-[#f9f9f9] h-auto min-h-screen sm:min-h-0 px-4 sm:px-12">
-  <div class="flex justify-center">
+
+  <div class="flex justify-center home-text">
     <h1 class="text-black text-2xl md:text-4xl lg:text-[36.8px] leading-tight font-bold text-center font-['Montserrat']">
       Automation
       <span class="whitespace-nowrap text-[#5C59C2]">
@@ -88,31 +126,22 @@
     </h1>
   </div>
 
-  <p class="text-black text-[16px] mt-3 text-center max-w-3xl font-light font-['Montserrat']">
+  <p class="text-black text-[16px] mt-3 text-center max-w-3xl font-light font-['Montserrat'] home-text">
     Dengan strategi yang tepat dan kreativitas tanpa batas, kami siap memperkuat identitas dan kehadiran bisnismu melalui sosial media yang menarik
   </p>
 
-  <div class="mt-4 flex flex-wrap justify-center gap-3 mb-4">
-    <div class="px-4 py-2 bg-[#EAEAEA] text-[#393C43] font-medium text-sm md:text-[15px] rounded-[4px] font-['Montserrat'] cursor-pointer">
-      Konsultasi Sekarang
-    </div>
-    <div class="px-6 py-2 bg-[#2A2A2A] font-medium text-white text-sm md:text-[15px] rounded-full flex items-center gap-1 font-['Montserrat'] cursor-pointer">
-      Ketahui Lebih Lanjut
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-        <path
-          fill-rule="evenodd"
-          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
-        />
-      </svg>
-    </div>
+  <div class="mt-4 flex flex-wrap justify-center gap-3 mb-4 home-text">
+    <!-- tombol2 -->
+    ...
   </div>
 
-  <div class="relative w-full p-0 m-0 max-w-[426px] overflow-hidden rounded-[10px] mx-auto">
+  <div class="relative w-full p-0 m-0 max-w-[426px] overflow-hidden rounded-[10px] mx-auto home-img">
     <div class="flex transition-transform duration-700 ease-in-out" id="slides">
       <img src="./hero.webp" alt="slide1" class="w-full h-auto object-cover flex-shrink-0" />
     </div>
   </div>
 </section>
+
 
 <section id="value" class="bg-white h-auto py-10 px-4 flex flex-col justify-center">
   <div class="mx-0 sm:mx-6">
@@ -123,7 +152,7 @@
         </svg>
     </div>
     <h2 class="mt-4 font-semibold text-[#1A1A1A] leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-[46.77px] max-w-4xl font-['Montserrat']">
-      Di Era Teknologi Seperti Sekarang Ini Banyak Permasalah Yang Sering Kita Hadapi
+      Di Era Teknologi Seperti Sekarang Ini Banyak Permasalahan Yang Sering Kita Hadapi
     </h2>
   </div>
 
@@ -430,7 +459,46 @@
       </div>
 </footer>
 
+
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
+
+  const revealElements = document.querySelectorAll("section");
+
+  revealElements.forEach((el) => {
+    el.classList.add("reveal");
+  });
+
+  const handleScroll = () => {
+    const triggerPoint = window.innerHeight * 0.85; // 85% area layar
+    revealElements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < triggerPoint) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("load", handleScroll);
+
+  const textEls = document.querySelectorAll("#home .home-text");
+  const imgEl = document.querySelector("#home .home-img");
+
+  const revealHome = () => {
+    const triggerPoint = window.innerHeight * 0.85;
+    const homeSection = document.querySelector("#home");
+    const rect = homeSection.getBoundingClientRect();
+
+    if (rect.top < triggerPoint) {
+      textEls.forEach(el => el.classList.add("show"));
+      imgEl.classList.add("show");
+    }
+  };
+
+  window.addEventListener("scroll", revealHome);
+  window.addEventListener("load", revealHome);
+
   // Hamburger Menu Toggle
   const hamburgerMenu = document.getElementById('hamburger-menu');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -538,4 +606,4 @@
 </script>
 
   </body>
-</html>
+</html> 
