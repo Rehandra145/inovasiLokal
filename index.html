@@ -13,16 +13,17 @@
     />
     <title>Inovasi Lokal | Komunitas Teknologi Informasi Indonesia</title>
     <style>
-      .reveal {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s ease-out;
-      }
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
 
-      .reveal.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
       /* Untuk elemen teks */
       .home-text {
@@ -481,41 +482,47 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
 
-  const revealElements = document.querySelectorAll("section");
+// --- Semua section untuk efek reveal ---
+const revealSections = document.querySelectorAll("section");
 
-  revealElements.forEach((el) => {
-    el.classList.add("reveal");
+// Tambahkan class reveal awal
+revealSections.forEach(el => el.classList.add("reveal"));
+
+// Observer untuk semua section
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); // hentikan observasi setelah muncul
+    }
   });
+}, { threshold: 0.15 }); // 15% dari elemen terlihat
 
-  const handleScroll = () => {
-    const triggerPoint = window.innerHeight * 0.85; // 85% area layar
-    revealElements.forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < triggerPoint) {
-        el.classList.add("show");
-      }
-    });
-  };
+revealSections.forEach(el => sectionObserver.observe(el));
 
-  window.addEventListener("scroll", handleScroll);
-  window.addEventListener("load", handleScroll);
 
-  const textEls = document.querySelectorAll("#home .home-text");
-  const imgEl = document.querySelector("#home .home-img");
+// --- Khusus #home section ---
+const homeSection = document.querySelector("#home");
+const textEls = document.querySelectorAll("#home .home-text");
+const imgEl = document.querySelector("#home .home-img");
 
-  const revealHome = () => {
-    const triggerPoint = window.innerHeight * 0.85;
-    const homeSection = document.querySelector("#home");
-    const rect = homeSection.getBoundingClientRect();
+// Tambahkan class reveal awal
+textEls.forEach(el => el.classList.add("reveal"));
+imgEl.classList.add("reveal");
 
-    if (rect.top < triggerPoint) {
+// Observer untuk #home
+const homeObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
       textEls.forEach(el => el.classList.add("show"));
       imgEl.classList.add("show");
+      observer.unobserve(entry.target);
     }
-  };
+  });
+}, { threshold: 0.15 });
 
-  window.addEventListener("scroll", revealHome);
-  window.addEventListener("load", revealHome);
+homeObserver.observe(homeSection);
+
 
   // Hamburger Menu Toggle
   const hamburgerMenu = document.getElementById('hamburger-menu');
